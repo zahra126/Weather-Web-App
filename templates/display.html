@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+     <h1>
+         City: {{ requested_city }}<br>
+         <!--Country: {{ requested_country }}<br>-->
+     </h1>
+     <h2>
+         Current Temperature: {{ fahrenheit }}<br>
+         {{ main_weather }}
+         <img src="{{ icon_url }}" width="6%"
+        height="auto"><br>
+     </h2>
+     <img src="../static/{{requested_city}}.png" width="60%"
+        height="auto"><br>
+    {% for i in average_temperatures %}
+    </h3>
+        Date: {{ i.date }}<br>
+        Temperature: {{ i.temperature }}<br>
+     <br>
+    {% endfor %}
+    </body>
+</html>

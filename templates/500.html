@@ -1,0 +1,13 @@
+<!doctype html>
+{ # Create static route path using "url_for()" }
+
+<html>
+    <body>
+
+         <h1>Website Error!</h1>
+         <h2>An unexpected error occured on our side while handling your request.</h2>
+        <img src="{{url_for('static',filename='500_img.jpg')}}" width="20%"
+        height="auto">
+
+    </body>
+</html>
